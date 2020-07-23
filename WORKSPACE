@@ -144,8 +144,8 @@ apple_support_dependencies()
 
 http_archive(
     name = "com_google_api_gax_java",
-    strip_prefix = "gax-java-77a4cc373914396dd343891e38cf743166668c96", # 1.57.0 with dependency updates.
-    urls = ["https://github.com/googleapis/gax-java/archive/77a4cc373914396dd343891e38cf743166668c96.zip"],
+    strip_prefix = "gax-java-1.57.2",
+    urls = ["https://github.com/googleapis/gax-java/archive/v1.57.2.zip"],
 )
 
 load("@com_google_api_gax_java//:repository_rules.bzl", "com_google_api_gax_java_properties")
@@ -223,8 +223,8 @@ pip_repositories()
 # Change upstream repository once PR is merged
 http_archive(
     name = "gapic_generator_python",
-    urls = ["https://github.com/googleapis/gapic-generator-python/archive/v0.28.1.zip"],
-    strip_prefix = "gapic-generator-python-0.28.1",
+    urls = ["https://github.com/googleapis/gapic-generator-python/archive/v0.29.1.zip"],
+    strip_prefix = "gapic-generator-python-0.29.1",
 )
 
 load("@gapic_generator_python//:repositories.bzl",
